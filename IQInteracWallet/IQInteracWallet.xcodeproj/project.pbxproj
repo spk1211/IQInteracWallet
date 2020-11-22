@@ -8,14 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		BB083091256A075D00038222 /* IQInteracWallet.h in Headers */ = {isa = PBXBuildFile; fileRef = BB08308F256A075D00038222 /* IQInteracWallet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB083098256A079100038222 /* IQWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB083097256A079100038222 /* IQWallet.swift */; };
+		BB083098256A079100038222 /* IQDemoWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB083097256A079100038222 /* IQDemoWallet.swift */; };
+		BB0830A8256A0FDF00038222 /* WalletDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB08309F256A0FDF00038222 /* WalletDetailsViewController.swift */; };
+		BB0830A9256A0FDF00038222 /* WalletInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0830A0256A0FDF00038222 /* WalletInfoViewController.swift */; };
+		BB0830AA256A0FDF00038222 /* WalletInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0830A3256A0FDF00038222 /* WalletInfoCell.swift */; };
+		BB0830AB256A0FDF00038222 /* IQWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0830A5256A0FDF00038222 /* IQWallet.swift */; };
+		BB0830AC256A0FDF00038222 /* WalletNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0830A6256A0FDF00038222 /* WalletNetwork.swift */; };
+		BB0830AD256A0FDF00038222 /* IQWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0830A7256A0FDF00038222 /* IQWalletViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB08308C256A075D00038222 /* IQInteracWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IQInteracWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB08308F256A075D00038222 /* IQInteracWallet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IQInteracWallet.h; sourceTree = "<group>"; };
 		BB083090256A075D00038222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB083097256A079100038222 /* IQWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQWallet.swift; sourceTree = "<group>"; };
+		BB083097256A079100038222 /* IQDemoWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQDemoWallet.swift; sourceTree = "<group>"; };
+		BB08309C256A0FDF00038222 /* WalletInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletInfoViewController.xib; sourceTree = "<group>"; };
+		BB08309D256A0FDF00038222 /* IQWalletViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IQWalletViewController.xib; sourceTree = "<group>"; };
+		BB08309E256A0FDF00038222 /* WalletDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletDetailsViewController.xib; sourceTree = "<group>"; };
+		BB08309F256A0FDF00038222 /* WalletDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletDetailsViewController.swift; sourceTree = "<group>"; };
+		BB0830A0256A0FDF00038222 /* WalletInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletInfoViewController.swift; sourceTree = "<group>"; };
+		BB0830A2256A0FDF00038222 /* WalletInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletInfoCell.xib; sourceTree = "<group>"; };
+		BB0830A3256A0FDF00038222 /* WalletInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletInfoCell.swift; sourceTree = "<group>"; };
+		BB0830A5256A0FDF00038222 /* IQWallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQWallet.swift; sourceTree = "<group>"; };
+		BB0830A6256A0FDF00038222 /* WalletNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletNetwork.swift; sourceTree = "<group>"; };
+		BB0830A7256A0FDF00038222 /* IQWalletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQWalletViewController.swift; sourceTree = "<group>"; };
+		BB0830AE256A10EF00038222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,11 +65,46 @@
 		BB08308E256A075D00038222 /* IQInteracWallet */ = {
 			isa = PBXGroup;
 			children = (
+				BB08309B256A0FDF00038222 /* Wallet */,
 				BB08308F256A075D00038222 /* IQInteracWallet.h */,
 				BB083090256A075D00038222 /* Info.plist */,
-				BB083097256A079100038222 /* IQWallet.swift */,
+				BB083097256A079100038222 /* IQDemoWallet.swift */,
+				BB0830AE256A10EF00038222 /* Assets.xcassets */,
 			);
 			path = IQInteracWallet;
+			sourceTree = "<group>";
+		};
+		BB08309B256A0FDF00038222 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				BB0830A1256A0FDF00038222 /* Cell */,
+				BB0830A4256A0FDF00038222 /* Manager */,
+				BB0830A0256A0FDF00038222 /* WalletInfoViewController.swift */,
+				BB08309C256A0FDF00038222 /* WalletInfoViewController.xib */,
+				BB0830A7256A0FDF00038222 /* IQWalletViewController.swift */,
+				BB08309D256A0FDF00038222 /* IQWalletViewController.xib */,
+				BB08309F256A0FDF00038222 /* WalletDetailsViewController.swift */,
+				BB08309E256A0FDF00038222 /* WalletDetailsViewController.xib */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		BB0830A1256A0FDF00038222 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BB0830A2256A0FDF00038222 /* WalletInfoCell.xib */,
+				BB0830A3256A0FDF00038222 /* WalletInfoCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BB0830A4256A0FDF00038222 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BB0830A5256A0FDF00038222 /* IQWallet.swift */,
+				BB0830A6256A0FDF00038222 /* WalletNetwork.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -76,7 +128,6 @@
 				BB083087256A075D00038222 /* Headers */,
 				BB083088256A075D00038222 /* Sources */,
 				BB083089256A075D00038222 /* Frameworks */,
-				BB08308A256A075D00038222 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -120,22 +171,18 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		BB08308A256A075D00038222 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		BB083088256A075D00038222 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB083098256A079100038222 /* IQWallet.swift in Sources */,
+				BB0830AB256A0FDF00038222 /* IQWallet.swift in Sources */,
+				BB0830AC256A0FDF00038222 /* WalletNetwork.swift in Sources */,
+				BB0830AA256A0FDF00038222 /* WalletInfoCell.swift in Sources */,
+				BB0830A8256A0FDF00038222 /* WalletDetailsViewController.swift in Sources */,
+				BB0830A9256A0FDF00038222 /* WalletInfoViewController.swift in Sources */,
+				BB0830AD256A0FDF00038222 /* IQWalletViewController.swift in Sources */,
+				BB083098256A079100038222 /* IQDemoWallet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

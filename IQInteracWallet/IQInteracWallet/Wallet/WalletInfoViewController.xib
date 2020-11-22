@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WalletInfoViewController" customModule="Book_My_Baskets" customModuleProvider="target">
+            <connections>
+                <outlet property="okButton" destination="nzp-IR-cbV" id="tuo-V9-k3O"/>
+                <outlet property="stepsLabel" destination="yHz-hP-RNC" id="AGp-7l-O5e"/>
+                <outlet property="titleLabel" destination="9Pv-08-C4k" id="22h-HX-x4I"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Load your wallet in a secured and easy way using interac e-transfer" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lu-9g-oGY">
+                    <rect key="frame" x="30" y="237" width="354" height="48"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Follow simple 3 step process listed below. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1s-uM-uIM">
+                    <rect key="frame" x="31" y="310" width="351" height="21.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHz-hP-RNC">
+                    <rect key="frame" x="32" y="355.5" width="351" height="21"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interacIcon" translatesAutoresizingMaskIntoConstraints="NO" id="7qe-kA-2cN">
+                    <rect key="frame" x="87" y="132" width="240" height="85"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="85" id="tGp-w3-XhI"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzp-IR-cbV">
+                    <rect key="frame" x="61" y="802" width="291" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="okButtonAction:" destination="-1" eventType="touchUpInside" id="05j-rD-FeF"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pv-08-C4k">
+                    <rect key="frame" x="20" y="64" width="374" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="ik9-Zf-uG5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="7qe-kA-2cN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="87" id="4cY-EA-pWX"/>
+                <constraint firstItem="yHz-hP-RNC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="6qI-Fk-97u"/>
+                <constraint firstItem="7qe-kA-2cN" firstAttribute="top" secondItem="9Pv-08-C4k" secondAttribute="bottom" constant="20" id="MMU-3z-3D1"/>
+                <constraint firstItem="3Lu-9g-oGY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="RiC-Eg-tiI"/>
+                <constraint firstItem="o1s-uM-uIM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="31" id="Ssh-ph-wdv"/>
+                <constraint firstItem="9Pv-08-C4k" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="WkG-ID-Ilw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3Lu-9g-oGY" secondAttribute="trailing" constant="30" id="Zmh-LO-Rda"/>
+                <constraint firstItem="9Pv-08-C4k" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="aBu-01-SIY"/>
+                <constraint firstItem="o1s-uM-uIM" firstAttribute="top" secondItem="3Lu-9g-oGY" secondAttribute="bottom" constant="25" id="aR5-M7-f0E"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nzp-IR-cbV" secondAttribute="trailing" constant="62" id="b4e-BX-JD7"/>
+                <constraint firstItem="3Lu-9g-oGY" firstAttribute="top" secondItem="7qe-kA-2cN" secondAttribute="bottom" constant="20" id="bGo-ph-jb5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nzp-IR-cbV" secondAttribute="bottom" constant="30" id="bRE-MZ-exH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9Pv-08-C4k" secondAttribute="trailing" constant="20" id="dZK-Pb-1cL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7qe-kA-2cN" secondAttribute="trailing" constant="87" id="ejy-nF-xnK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="o1s-uM-uIM" secondAttribute="trailing" constant="32" id="jSX-YS-AHT"/>
+                <constraint firstItem="nzp-IR-cbV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="61" id="jVf-pV-7DQ"/>
+                <constraint firstItem="yHz-hP-RNC" firstAttribute="top" secondItem="o1s-uM-uIM" secondAttribute="bottom" constant="24" id="qhG-ti-ESr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yHz-hP-RNC" secondAttribute="trailing" constant="31" id="z31-wK-lmP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="121.875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="interacIcon" width="350" height="144"/>
+    </resources>
+</document>
