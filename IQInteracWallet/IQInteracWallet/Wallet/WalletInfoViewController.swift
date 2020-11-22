@@ -34,9 +34,9 @@ class WalletInfoViewController: UIViewController {
         let attributedText2 = "Step 2: Add following email \(email ?? "") to your Bank Account \n\n"
         let attributedText3 = "Step 3: Start sending money to email:\(email ?? "") and provide your registered 'Phone Number' of your account in Interac transfer message box"
         let fullString = NSMutableAttributedString.init()
-        fullString.append(attributedText1.colored(with: IQWallet.walletInfo1Color ?? IQWallet.defaultColor))
-        fullString.append(attributedText2.colored(with: IQWallet.walletInfo2Color ?? IQWallet.defaultColor))
-        fullString.append(attributedText3.colored(with: IQWallet.walletInfo3Color ?? IQWallet.defaultColor))
+        fullString.append(attributedText1.colored(with: IQWallet.walletInfo1Color))
+        fullString.append(attributedText2.colored(with: IQWallet.walletInfo2Color))
+        fullString.append(attributedText3.colored(with: IQWallet.walletInfo3Color))
         stepsLabel.attributedText = fullString
     }
 
