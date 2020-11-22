@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "IQInteracWallet"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "An awesome wallet framework for Interac"
   spec.description  = "A brilliant framework of a wallet with Interac option."
   spec.homepage     = "https://github.com/spk1211/IQInteracWallet"
